@@ -1,0 +1,147 @@
+@font-face{
+    font-family: "Charmonman";
+    src: url("../font/Charmonman-Regular.ttf")
+}
+body {
+    background: #e7edf0;
+    margin: 0;
+    font-family: "Charmonman",cursive;
+}
+
+nav {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    top: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+ul {
+    
+    float: left;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding-left: 65px;
+}
+
+ul li {
+    /* display: inline-block; */
+    float: left;
+    height: 50px;   
+}
+
+
+nav ul li a{
+    height: 47px;
+    display: block;
+    color: #66757f;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    
+}
+nav ul li span{
+    float: left;
+    margin: 16px;
+}
+
+nav ul li a:hover{
+    border-bottom: 3px solid #1c94e0;   
+    color:#1c94e0;
+}
+video{
+    margin: 5%;
+    margin-top: 0px;
+}
+
+
+.border {
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid red; */
+    /* border-image: linear-gradient(to left, #743ad5, #d53a9d) ; */
+     border-radius: 50%;
+     margin-top: 10%;
+     padding: 3%;
+    /*border: 3px solid;
+    border-image: linear-gradient(to left, #743ad5, #d53a9d); */
+
+
+}
+.border:hover{
+    width: 250px;
+    height: 250px;
+    border-bottom: 3px solid #1c94e0;   
+    color:#1c94e0;
+}
+.border-1{
+    border-radius: 5px  ;
+     
+    margin: 5%;
+    margin-top:0px;
+}
+.card{
+    text-align: center;
+    position : relative;
+	height: 575px;
+	float:  left ;
+    margin : 10px ;
+    top: 50px;
+    margin-right: 0px;
+	background-color : #FFF;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+}
+.card-24:hover{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+.card-24{
+
+    width: 24%;
+    
+}
+.card-99{
+    position: relative;
+    width: 99%;
+    height: 100% ;
+    
+}
+.card-29{
+    width: 35%;
+    
+}
+.card-50{
+    width: 62.5%;
+    
+}
+
+.card-97{
+    width: 97%;
+    height: auto;
+}
+
+th{
+    text-align: right;
+
+}
+td {
+    text-align: left;
+    
+}
+table#t01{
+    text-align: center;
+}
+div{
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+p{
+    margin: 10%;
+    margin-top: 5%;
+}
+h3{
+    text-align: left;
+}
