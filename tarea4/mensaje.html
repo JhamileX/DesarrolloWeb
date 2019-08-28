@@ -2,52 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Enviame un mensaje</title>
 </head>
 <body>
-    <div align="center">
-        <table width="100%">
-            <tr >
-                <th width="16.6%"><a href="./index.html" >Perfil</a></th>
-                <th width="16.6%"><a href="./amigos.html" >Mis Amigos</a></th>
-                <th width="16.6%"><a href="./ciudad.html" >Mi Ciudad</a></th>
-                <th width="16.6%"><a href="./hobbies.html" >Hobbies</a></th>
-                <th width="16.6%"><a href="./programacion.html" >Programacion</a></th>
-                <th width="16.6%"><a href="./mensaje.html" >Enviame un Mensaje</a></th>
-            </tr>
-        </table>
-        <hr>
-        <h1 >Enviame un Mensaje</h1>
+    <nav>
+        <ul>
+            <li><a href="./index.html"><span>Inicio</span></a></li>
+            <li><a href="./amigos.html"><span>Mis Amigos</span></a></li>
+            <li><a href="./ciudad.html"><span>Mi Ciudad</span></a></li>
+            <li><a href="./hobbies.html"><span>Hobbies</span></a></li>
+            <li><a href="./programacion.html"><span>Programacion</span></a></li>
+            <li><a href="./mensaje.html"><span>Enviame un Mensaje</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="card card-99-m" align="center">
+        
+        
 		<form action="">
-            <input type="text" placeholder="Nombre" size="36" ><br><br>
-            <input type="text" placeholder="Apellido" size="36" ><br><br>
-            <input type="email" placeholder="email" size="36"><br><br>
+                <h1 >Enviame un Mensaje</h1>
+            <table>
+                <tr >
+                    <td><input class="lf" type="text" placeholder="Nombre"  ><br><br></td>
+                    <td><input class="lf" type="text" placeholder="Apellido"  ><br><br></td>
+                    <td><input class="lf" type="email" placeholder="email"><br><br></td>
+                </tr>
+            </table>
             Fecha de Nacimiento: 
-            <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select> /
-            <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select> /
-            <select> 
-                <option>1998</option>
-                <option>1999</option>
-                <option>2000</option>
-                <option>2001</option>
-            </select>
-            <br><br>
-            <input type="radio" name="sexo" >Masculino <br>
-            <input type="radio" name="sexo" >Femenino <br>
-            <input type="radio" name="sexo" >Otro <br><br>
-            <textarea name="" cols="36" rows="10" placeholder="Comentario"></textarea><br><br>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select> /
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select> /
+                <select> 
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                </select>
+        <h1></h1>
+            <input class="rad" width="30px" type="radio" name="sexo" >Masculino <br>
+            <input class="rad" width="30px"type="radio" name="sexo" >Femenino <br>
+            <input class="rad" type="radio" name="sexo" >Otro 
+        <h1></h1>
+            
+                    
+            
+            
+            <textarea name="" cols="100" rows="4" placeholder="Comentario"></textarea><br><br>
             <input class="button" type="submit" placeholder="Enviar">
         </form>
+    </div>
 
 </body>
 </html>

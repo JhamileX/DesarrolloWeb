@@ -108,6 +108,11 @@ video{
     height: 100% ;
     
 }
+.card-99-m{
+    position: relative;
+    width: 99%;
+    
+}
 .card-29{
     width: 35%;
     
@@ -144,4 +149,72 @@ p{
 }
 h3{
     text-align: left;
+}
+
+form {
+    width: 100%;
+    
+    position: relative;
+}
+
+.lf{
+    
+    margin: 50px ;
+    margin-top: 0%;
+    margin-bottom: 0%
+}
+input{
+    width: 300px;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 2px ;
+    border: none;
+    border-bottom: 2px solid #1c94e0;
+    background: none;
+    outline: none;
+    text-align: center;
+}
+
+.rad{
+    width: 4%;
+    text-align: center;
+}
+textarea{
+    border-radius: 15px;
+    border-color: #1c94e0;
+}
+.button{
+    border: 3px solid none;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    color: #FFF;
+}
+.button:hover{
+    border: 3px solid none;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #3F5EFB 0%,#FC466B 100% );
+    color: #FFF;
+}
+
+select{
+    margin-left: 4px;
+    margin-right: 4px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #1c94e0;
+}
+
+.tab{
+    margin-left: 15%;
+}
+
+.tab th{
+    border-bottom: 2px solid #3F5EFB;
+}
+
+.tab td{
+    border-bottom: 2px solid #1c94e0;
+    
+    /* border-bottom-color:  linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); */
+    
 }
