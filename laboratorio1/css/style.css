@@ -1,0 +1,109 @@
+
+#contenedor {
+	width: 900px;
+    margin: 0 auto;
+
+}
+#arriba {
+	width: 900px;
+	height: 200px;
+    background: #7ec8ce91;
+    text-align: center;
+}
+#izquierda {
+	width: 120px;
+	height: 250px;
+	background: #616b61;
+	float: left;
+}
+
+#red{
+    color: red;
+    float: left;
+}
+#yell{
+    color: #FC0;
+    float: left;
+}
+#green{
+    float: left;
+    color: green
+}
+.cont{
+    float: left;
+}
+table{
+    margin: 40px;
+    margin-left: 40%;
+    border: 2px solid;
+    border-color: #333;
+}
+.cuerpo {
+    text-align: center;
+    
+	width:780px;
+	height: 250px;
+	background: #e8e8e8;
+	float: left;	
+}
+span{
+    text-align: left;
+}
+#titulo{
+    margin-left: 150px;
+    width: 600px;
+}
+#uni {
+    color: red;
+}
+#fac{
+    color: blue;
+    margin-right: 120px;
+    font-size: 20px;
+
+}
+
+img{
+    float: left;
+    margin-left: 100px;
+}
+
+h2{
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+ul.menu {
+    width: 100px;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+border-left:1px solid #7C7C7C;
+}
+
+ul.menu li{
+    width: 100px;
+}
+
+ul.menu li a:link, ul.menu li a:visited {
+    padding: .3em;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background: #F4F4F4;
+    border-top:1px solid #7C7C7C;
+    border-right:1px solid #7C7C7C;
+border-bottom:1px solid #9C9C9C;
+}
+ul.menu li a:hover{
+    background-color: #FC0;
+}
+
+ul.info{
+    width: 100%;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    
+}
+    
