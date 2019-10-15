@@ -31,7 +31,7 @@
 	{
 		$_SESSION['user']=$fila['usuario'];
 		$_SESSION['password']=$fila['password'];
-		//header("Location:listar.php");
+		header("Location:fitroduccion.html");
 	}
 	else
 	{	
