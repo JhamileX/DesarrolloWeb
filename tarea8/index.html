@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Calendario</title>
+	<script>
+    x1=new Date();
+	x2=new Date();
+	mes=x1.getMonth()+1;
+	anio=x2.getFullYear();
+	llamar(mes,anio);
+	function llamar(mes,anio)
+	{ 
+		ajax=new XMLHttpRequest();
+		ajax.onreadystatechange=function() {
+		if (ajax.readyState==4) {
+			document.getElementById('contenido').innerHTML= ajax.responseText;
+			}
+		}
+		ajax.open("get","calendario.php?mes="+mes+"&anio="+anio,true);
+		ajax.send(null);
+	}
+    function actual(){
+        x1=new Date(); 
+        x2=new Date(); 
+        mes=x1.getMonth()+1; 
+        anio=x2.getFullYear(); 
+        llamar(mes,anio)
+    }
+	</script>
+</head>
+<body>	
+<input type="button" value="<<año" onclick="anio--;llamar(mes,anio)">
+<input type="button" value="<<mes" onclick="if (mes==1) mes=12; else mes--;llamar(mes,anio)">
+<input type="button" value="Actual" onclick="actual()">
+<input type="button" value="mes>>" onclick="mes=(mes%12)+1;llamar(mes,anio)">
+<input type="button" value="año>>" onclick="anio++;llamar(mes,anio)">
+<div id="contenido"></div> 
+</body>
+</html>

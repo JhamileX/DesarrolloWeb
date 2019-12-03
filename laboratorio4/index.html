@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="pregunta1" onclick="llamar('pregunta1.html')">
+	<input type="button" value="pregunta2" onclick="llamar('pregunta2.html')">
+	<div id="contenido">
+		
+	</div>
+	
+
+<script>
+	function llamar($direccion)
+	{
+		ajax=new XMLHttpRequest();
+		ajax.onreadystatechange=function()
+		{
+		 if(ajax.readyState == 4) { 
+		 	if(ajax.status == 200) { 
+		 	 document.getElementById('contenido').innerHTML=ajax.responseText;
+		 	}
+		 	}	
+		} 
+		ajax.open('GET', $direccion, true); 
+		ajax.send(); 
+	}
+	function llamarGET()
+	{
+		ajax=new XMLHttpRequest();
+		ajax.onreadystatechange=function()
+		{
+		 if(ajax.readyState == 4) { 
+		 	if(ajax.status == 200) { 
+		 	 document.getElementById('contenido').innerHTML=ajax.responseText;
+		 	}
+		 	}	
+		} 
+		cadena="txtUsuario="+encodeURIComponent(document.getElementById("txtUsuario").value)+"&";
+		cadena+="txtNombres="+encodeURIComponent(document.getElementById("txtNombres").value)+"&";
+		cadena+="txtApellidos="+encodeURIComponent(document.getElementById("txtApellidos").value)+"&";
+		cadena+="txtCorreo="+encodeURIComponent(document.getElementById("txtCorreo").value)+"&";
+		cadena+="txtPassword="+encodeURIComponent(document.getElementById("txtPassword").value);
+		
+		cadena+="&nocache=" + Math.random();
+		console.log(cadena)
+		ajax.open('GET', 'insertarGET.php?'+cadena, true); 
+		ajax.send(); 
+	}
+
+
+	function pregunta2()
+	{
+	
+		document.getElementById("resultado").style.backgroundColor="yellow";
+		document.getElementById("resultado").style.textAlign="center";
+		document.getElementById("resultado").style.fontSize="100px"
+		 document.getElementById('resultado').innerText=document.getElementById("txtNumero").value;
+	}
+
+</script>
+
+</body>
+</html>
